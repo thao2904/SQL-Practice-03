@@ -42,8 +42,8 @@ from worker
 WHERE first_name = 'Amitah'
 --Practice10:
 select id, SUBSTRING(title from LENGTH(winery) + 2 FOR 4) as year
-from winemag_p2;
-
+from winemag_p2
+WHERE country = 'Macedonia';
 
 
 
