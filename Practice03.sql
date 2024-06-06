@@ -33,6 +33,16 @@ LIMIT 2
 SELECT tweet_id from Tweets
 WHERE LENGTH(content) > 15
 --Practice08:
+SELECT COUNT(id) as employee_number from employees
+WHERE EXTRACT(month from joining_date) BETWEEN '01' AND '07' 
+AND EXTRACT (year from joining_date) = 2022;
+--Practice09:
+select POSITION('a' IN first_name) as name
+from worker
+WHERE first_name = 'Amitah'
+--Practice10:
+select id, SUBSTRING(title from LENGTH(winery) + 2 FOR 4) as year
+from winemag_p2;
 
 
 
